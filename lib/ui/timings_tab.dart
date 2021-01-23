@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gymble/dummy_data.dart';
-import '../models/constants.dart';
 
 class TimingsTab extends StatelessWidget {
   final String title;
@@ -36,7 +35,7 @@ class TimingsTab extends StatelessWidget {
                     vertical: 5, horizontal: 8,
                   ),
                   decoration: BoxDecoration(
-                    color: kBackgroundColor,
+                    color: Color(0xFF202020),
                     border: Border.all(color: Colors.white.withOpacity(0.7)),
                     borderRadius: BorderRadius.circular(10),
                   ),

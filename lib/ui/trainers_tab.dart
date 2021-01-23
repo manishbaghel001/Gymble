@@ -26,6 +26,8 @@ class TrainersTab extends StatelessWidget {
               return Container(
                   child: Card(
                     // In future use inkWell to extend the amenities
+                    semanticContainer: true,
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
                     shape:
                         RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                     elevation: 5,
@@ -43,9 +45,8 @@ class TrainersTab extends StatelessWidget {
                               // ),
                               child:Container(
                               height: 142,
-                              width: 185,
-                               
-                              child: CachedNetworkImage(
+                              width: MediaQuery.of(context).size.width,
+                              child:CachedNetworkImage(
                               imageUrl: gymId.trainersImgUrl[index],
                               fit: BoxFit.fill,
                               //  height: 140,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../models/constants.dart';
 import 'signin_screen.dart';
 class SignUpScreen extends StatelessWidget {
   @override
@@ -29,7 +28,7 @@ class SignUpScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(60),
                     ),
                     child: CircleAvatar(
-                      backgroundColor: kBackgroundColor,
+                      backgroundColor: Color(0xFF202020),
                       radius: 60,
                       child: Icon(
                         Icons.person,
@@ -67,17 +66,17 @@ class SignUpScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.home,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             
                             child: TextField(
                               textCapitalization: TextCapitalization.words,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                               focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                             // enabledBorder: OutlineInputBorder(
                             //     borderSide: BorderSide(color: Colors.red),
                             // ),
@@ -98,17 +97,17 @@ class SignUpScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.alternate_email,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             child: TextField(
                               keyboardType: TextInputType.emailAddress,
                               
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Email Address',
                               ),
                             ),
@@ -126,16 +125,16 @@ class SignUpScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.mobile_screen_share,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             child: TextField(
                               keyboardType: TextInputType.number,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Mobile No.',
                               ),
                             ),
@@ -153,17 +152,17 @@ class SignUpScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.lock_outline,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             child: TextField(
                               autocorrect: false,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               obscureText: true,
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Password',
                               ),
                             ),
@@ -181,17 +180,17 @@ class SignUpScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.lock_outline,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             child: TextField(
                               autocorrect: false,
                               obscureText: true,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Repeat Password',
                               ),
                             ),
@@ -206,7 +205,7 @@ class SignUpScreen extends StatelessWidget {
                               EdgeInsets.symmetric(horizontal: 50, vertical: 13),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30),
-                            color: kPrimaryColor,
+                            color: Color(0xFFFFBD73),
                           ),
                           child: Row(
                             children: <Widget>[

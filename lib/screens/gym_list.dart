@@ -36,11 +36,10 @@ class GymsList extends StatelessWidget {
     return Container(
       child: Column(
         children: <Widget>[
-         // Text('Discover fittness',style: Theme.of(context).textTheme.headline4,),
           InkWell(
             onTap: () => selectGym(context),
             child: Card(
-              //color: Colors.black.withOpacity(0.7),
+              //color: Colors.black.withOpacity(0.5),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),

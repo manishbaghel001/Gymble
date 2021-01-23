@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gymble/ui/amenities_tab.dart';
 import 'package:gymble/ui/overview_tab.dart';
 import 'package:gymble/ui/timings_tab.dart';
-import '../models/constants.dart';
 import 'package:gymble/ui/trainers_tab.dart';
 import '../widgets/membership.dart';
 import '../dummy_data.dart';
@@ -125,7 +124,7 @@ class TabsScreen extends StatelessWidget {
                 ],
                 dotSize: 4.0,
                 dotSpacing: 15.0,
-                dotColor: kPrimaryColor,
+                dotColor: Color(0xFFFFBD73),
                 indicatorBgPadding: 5.0,
                 dotBgColor: Colors.purple.withOpacity(0),
                 borderRadius: true,
@@ -155,7 +154,7 @@ class TabsScreen extends StatelessWidget {
                       child: Text(
                         'Overview',
                         style: Theme.of(context).textTheme.headline4.copyWith(
-                              fontSize: 18.5,
+                              fontSize: 18,
                               color: Colors.black,
                             ),
                       ),
@@ -164,7 +163,7 @@ class TabsScreen extends StatelessWidget {
                       child: Text(
                         'Amenities',
                         style: Theme.of(context).textTheme.headline4.copyWith(
-                              fontSize: 18.5,
+                              fontSize: 18,
                               color: Colors.black,
                             ),
                       ),
@@ -173,7 +172,7 @@ class TabsScreen extends StatelessWidget {
                       child: Text(
                         'Trainers',
                         style: Theme.of(context).textTheme.headline4.copyWith(
-                              fontSize: 18.5,
+                              fontSize: 18,
                               color: Colors.black,
                             ),
                       ),
@@ -182,7 +181,7 @@ class TabsScreen extends StatelessWidget {
                       child: Text(
                         'Timings',
                         style: Theme.of(context).textTheme.headline4.copyWith(
-                              fontSize: 18.5,
+                              fontSize: 18,
                               color: Colors.black,
                             ),
                       ),
@@ -225,7 +224,7 @@ class TabsScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 130, vertical: 13),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: kPrimaryColor,
+                    color: Color(0xFFFFBD73),
                   ),
                   child: Row(
                     children: <Widget>[

@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gymble/screens/tabs_home_screen.dart';
-import '../models/constants.dart';
 import '../models/my_flutter_app_icons.dart';
 import 'signup_screen.dart';
 import '../widgets/forgot_password.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SignInScreen extends StatelessWidget {
-  void selectGymbleMainPage(BuildContext ctx)
-  {
-    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return TabsHomeScreen();
-    },),);
-  }
+  
   
   @override
   Widget build(BuildContext context) {
@@ -92,16 +86,16 @@ class SignInScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.alternate_email,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
                             child: TextField(
                               keyboardType: TextInputType.emailAddress,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Email Address',
                               ),
                             ),
@@ -117,7 +111,7 @@ class SignInScreen extends StatelessWidget {
                             padding: EdgeInsets.only(right: 15),
                             child: Icon(
                               Icons.phonelink_lock_outlined,
-                              color: kPrimaryColor,
+                              color: Color(0xFFFFBD73),
                             ),
                           ),
                           Expanded(
@@ -127,10 +121,10 @@ class SignInScreen extends StatelessWidget {
                               obscureText: true,
                               textInputAction: TextInputAction.send,
                              // onChanged: onChanged,
-                              cursorColor: kPrimaryColor,
+                              cursorColor: Color(0xFFFFBD73),
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: kPrimaryColor),),
+                              borderSide: BorderSide(color: Color(0xFFFFBD73)),),
                                 hintText: 'Password',
                                 
                               ),
@@ -223,23 +217,34 @@ class SignInScreen extends StatelessWidget {
                           ),
                          Spacer(),
                           FittedBox(
-                              child: InkWell(
-                                onTap: () => selectGymbleMainPage(context),
-                                splashColor: kPrimaryColor,
-                                borderRadius: BorderRadius.circular(15),
+                            child:GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return TabsHomeScreen();
+                                    },
+                                  ),
+                                );},
+                            
+                              // child: InkWell(
+                              //   onTap: () => selectGymbleMainPage(context),
+                                // splashColor: kPrimaryColor,
+                                // borderRadius: BorderRadius.circular(15),
                               child: Container(
                               padding: EdgeInsets.all(15),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: kPrimaryColor,
+                                color: Color(0xFFFFBD73),
                               ),
                               child: Icon(
                                 Icons.arrow_forward,
                                 color: Colors.black,
                               ),
                             ),
-                              ),
-                          ),
+                              ),),
+                          
                         ],
                       ),
                     ),

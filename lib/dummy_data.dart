@@ -91,33 +91,29 @@ const DUMMY_MEALS = const [
       'Female',
     ],
     timings: [
-      '02:00 am',
-      '04:00 am',
-      '06:00 am',
-      '08:00 am',
-      '10:00 am',
-      '12:00 pm',
-      '02:00 pm',
-      '04:00 pm',
-      '06:00 pm',
-      '08:00 pm',
+      '02:00',
+      '04:00',
+      '06:00',
+      '08:00',
+      '10:00',
+      '12:00',
+      '02:00',
+      '04:00',
+      '06:00',
+      '24:00',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
       '2500',
       '5000',
       '7500',
-    ],
-    isGlutenFree: false,
-    isVegan: true,
-    isVegetarian: true,
-    isLactoseFree: true,
+    ],    
     amenitiesImageUrl: [
       'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/d/d6/Personal_Trainer_-_Treinador_Pessoal.jpg',
@@ -173,10 +169,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -184,10 +180,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: false,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://upload.wikimedia.org/wikipedia/commons/d/d6/Personal_Trainer_-_Treinador_Pessoal.jpg',
@@ -247,10 +240,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -258,10 +251,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
@@ -317,10 +307,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -328,10 +318,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: false,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
@@ -376,10 +363,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -400,10 +387,7 @@ const DUMMY_MEALS = const [
       'Male',
       'Female',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: true,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://upload.wikimedia.org/wikipedia/commons/d/d6/Personal_Trainer_-_Treinador_Pessoal.jpg',
@@ -460,10 +444,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -471,10 +455,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
@@ -530,10 +511,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -541,10 +522,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
+    
     amenitiesImageUrl: [
       'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/d/d6/Personal_Trainer_-_Treinador_Pessoal.jpg',
@@ -600,10 +578,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -611,10 +589,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
@@ -670,10 +645,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -681,10 +656,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
@@ -742,10 +714,10 @@ const DUMMY_MEALS = const [
       '08:00 pm',
     ],
     membership:[
-      '1 Months',
-      '3 Months',
-      '6 Months',
-      '1 Year',
+      'Monthly',
+      'Quarterly',
+      'Half Yearly',
+      'Annually',
     ],
     membershipPlans:[
       '900',
@@ -753,10 +725,7 @@ const DUMMY_MEALS = const [
       '5000',
       '7500',
     ],
-    isGlutenFree: true,
-    isVegan: true,
-    isVegetarian: true,
-    isLactoseFree: true,
+    
     amenitiesImageUrl: [
       'https://upload.wikimedia.org/wikipedia/commons/4/49/Lockers_in_modern_change_room.JPG',
       'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',

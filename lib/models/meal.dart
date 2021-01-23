@@ -1,23 +1,10 @@
 import 'package:flutter/foundation.dart';
 
-// enum Complexity {
-//   Simple,
-//   Challenging,
-//   Hard,
-// }
-
-// enum Affordability {
-//   Affordable,
-//   Pricey,
-//   Luxurious,
-// }
-
 class Meal {
   final String id;
   final List<String> categories;
   final String title;
   final String imageUrl;
-  //final List<String> gymImageUrl;
   final String description;
   final List<String> steps;
   final List<String> trainersImgUrl;
@@ -27,12 +14,7 @@ class Meal {
   final List<String> membership;
   final List<String> membershipPlans;
   final String duration;
-  //final Complexity complexity;
   final String affordability;
-  final bool isGlutenFree;
-  final bool isLactoseFree;
-  final bool isVegan;
-  final bool isVegetarian;
   final List<String> amenitiesImageUrl;
 
   const Meal({
@@ -40,7 +22,6 @@ class Meal {
     @required this.categories,
     @required this.title,
     @required this.imageUrl,
-    //@required this.gymImageUrl,
     @required this.description,
     @required this.steps,
     @required this.trainersImgUrl,
@@ -51,10 +32,6 @@ class Meal {
     @required this.membershipPlans,
     @required this.duration,
     @required this.affordability,
-    @required this.isGlutenFree,
-    @required this.isLactoseFree,
-    @required this.isVegan,
-    @required this.isVegetarian,
     @required this.amenitiesImageUrl,
   });
 }

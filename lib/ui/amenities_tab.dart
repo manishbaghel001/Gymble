@@ -18,7 +18,7 @@ class AmenitiesTab extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-          height: height*0.35,
+          height: height*0.43,
           child: GridView.builder(
             itemCount: gymId.amenitiesImageUrl.length,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(

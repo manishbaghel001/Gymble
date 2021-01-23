@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/constants.dart';
+
 class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                           padding: EdgeInsets.only(right: 15),
                           child: Icon(
                             Icons.alternate_email,
-                            color: kPrimaryColor,
+                            color: Color(0xFFFFBD73),
                           ),
                         ),
                         Expanded(
@@ -40,7 +40,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                             EdgeInsets.symmetric(horizontal: 160, vertical: 12),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
-                          color: kPrimaryColor,
+                          color: Color(0xFFFFBD73),
                         ),
                         child: Row(
                           children: <Widget>[

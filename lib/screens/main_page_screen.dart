@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gymble/models/meal.dart';
 import '../dummy_data.dart';
 import './gym_list.dart';
 import '../ui/upper_main_page.dart';
@@ -16,35 +17,50 @@ class MainPageScreen extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.only(
-              top: 35,
-              bottom: 0,
-            ),
-            height: height * 0.16,
+            padding: EdgeInsets.only(top: 25),
+            //color: Colors.red,
+            height: height * 0.205,
             width: double.infinity,
             child: UpperMainPage(),
           ),
-          Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: 7,
-            ),
-            height: height * 0.88,
-            width: double.infinity,
-            child: ListView.builder(
-              itemBuilder: (ctx, index) {
-                return GymsList(
-                  affordability: categoryGyms[index].affordability,
-                  description: categoryGyms[index].description,
-                  title: categoryGyms[index].title,
-                  id: categoryGyms[index].id,
-                  imageUrl: categoryGyms[index].imageUrl,
-                  duration: categoryGyms[index].duration,
-                );
-              },
-              itemCount: categoryGyms.length,
-            ),
-          ),
+          MiddleMainPage(height: height, categoryGyms: categoryGyms),
         ],
+      ),
+    );
+  }
+}
+
+class MiddleMainPage extends StatelessWidget {
+  const MiddleMainPage({
+    Key key,
+    @required this.height,
+    @required this.categoryGyms,
+  }) : super(key: key);
+
+  final double height;
+  final List<Meal> categoryGyms;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: 7,
+      ),
+      height: height * 0.838,
+      width: double.infinity,
+      child: ListView.builder(
+        padding: EdgeInsets.all(0.0),
+        itemBuilder: (ctx, index) {
+          return GymsList(
+            affordability: categoryGyms[index].affordability,
+            description: categoryGyms[index].description,
+            title: categoryGyms[index].title,
+            id: categoryGyms[index].id,
+            imageUrl: categoryGyms[index].imageUrl,
+            duration: categoryGyms[index].duration,
+          );
+        },
+        itemCount: categoryGyms.length,
       ),
     );
   }
